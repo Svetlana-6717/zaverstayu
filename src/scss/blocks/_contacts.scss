@@ -1,0 +1,132 @@
+.contacts {
+  &__map {
+    position: relative;
+    height: 644px;
+    @media (max-width: 992px) {
+      height: 500px;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      height: 650px;
+    }
+    &-image {
+      position: absolute;
+      display: block;
+      width: 100%;
+      border: 0;
+      @media (max-width: 992px) {
+        height: 500px;
+      }
+      @media (max-width: 768px) {
+        position: static;
+        margin-left: 0;
+        width: 100%;
+        min-height: inherit;
+        height: 100%;
+        order: 1;
+      }
+    }
+  }
+  &-popup {
+    position: absolute;
+    padding: 39px 108px 65px 35px;
+    top: 52px;
+    left: 222px;
+    max-width: 386px;
+    min-height: 520px;
+    border-radius: 12px;
+    background-color: $light;
+    @media (max-width: 1201px) {
+      left: 100px;
+    }
+    @media (max-width: 992px) {
+      padding: 35px;
+      top: 40px;
+      left: 50px;
+      max-width: 320px;
+      min-height: 440px;
+    }
+    @media (max-width: 768px) {
+      position: static;
+      max-width: 100%;
+      min-height: auto;
+      padding: 20px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 20px 40px;
+    }
+  }
+  &__title {
+    margin-bottom: 39px;
+    font-family: $playfair;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    @media (max-width: 992px) {
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+  &__list {
+    @media (max-width: 768px) {
+      max-width: 530px;
+      min-height: 150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, min-content);
+      gap: 20px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-height: 200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, min-content);
+    }
+  }
+  &__item {
+    font-size: 16px;
+    line-height: 20px;
+    @media (max-width: 768px) {
+      max-width: 250px;
+    }
+  }
+  &__subtitle {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  &__text {
+    display: block;
+    font-weight: 500;
+    margin-top: 13px;
+    margin-bottom: 30px;
+    @media (max-width: 992px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+    &--address {
+      margin-top: 17px;
+      margin-bottom: 32px;
+    }
+    &--time {
+      margin-top: 14px;
+    }
+    &--email {
+      margin-bottom: 0;
+      @media (max-width: 992px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

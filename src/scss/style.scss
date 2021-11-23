@@ -1,0 +1,32 @@
+// Подключение переменных
+@import 'variables';
+// Подключение normalize
+@import 'normalize';
+// Подключение базовых настроек
+@import 'settings';
+// Стили блока header
+@import 'blocks/header';
+// Стили блока promo
+@import 'blocks/promo';
+// Стили блока advantages
+@import 'blocks/advantages';
+// Стили блока popular
+@import 'blocks/popular';
+// Стили блока catalog
+@import 'blocks/catalog';
+// Стили блока discount
+@import 'blocks/discount';
+// Стили блока steps
+@import 'blocks/steps';
+// Стили блока news
+@import 'blocks/news';
+// Стили блока reviews
+@import 'blocks/reviews';
+// Стили блока contacts
+@import 'blocks/contacts';
+// Стили блока footer
+@import 'blocks/footer';
+// Стили блока cart
+@import 'blocks/cart';
+// Стили блока basket
+@import 'blocks/basket';

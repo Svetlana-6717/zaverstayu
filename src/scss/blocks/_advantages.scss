@@ -1,0 +1,103 @@
+.advantages {
+  margin-bottom: 80px;
+  @media (max-width: 1201px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item {
+    display: flex;
+    max-width: 387px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    @media (max-width: 576px) {
+      flex-direction: row;
+      max-width: 87%;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+  &__image {
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    @media (max-width: 992px) {
+      margin-right: 0;
+      background-position: center;
+    }
+    @media (max-width: 576px) {
+      min-width: 82px;
+    }
+    &--delivery {
+      min-width: 82px;
+      height: 52px;
+      background-image: url('../img/advantages/advantage-1.svg');
+    }
+    &--bouquet {
+      min-width: 52px;
+      height: 56px;
+      margin-right: 24px;
+      background-image: url('../img/advantages/advantage-2.svg');
+      @media (max-width: 1201px) {
+        margin-right: 20px;
+      }
+    }
+    &--report {
+      min-width: 59px;
+      height: 56px;
+      background-image: url('../img/advantages/advantage-3.svg');
+    }
+  }
+  &__block {
+    max-width: 285px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      max-width: 100%;
+      text-align: left;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    @media (max-width: 1201px) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    @media (max-width: 1201px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

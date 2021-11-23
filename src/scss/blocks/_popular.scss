@@ -1,0 +1,196 @@
+.popular {
+  margin-bottom: 73px;
+  @media (max-width: 992px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+  &-wrapper {
+    max-width: 794px;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+      max-width: 760px;
+    }
+    @media (max-width: 768px) {
+      max-width: 560px;
+    }
+    @media (max-width: 576px) {
+      width: 87%;
+    }
+  }
+  &__title {
+    margin-left: 12px;
+    margin-bottom: 36px;
+    font-family: $playfair;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02px;
+    text-align: center;
+    @media (max-width: 768px)  {
+      margin-left: 0;
+      margin-bottom: 30px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @media (max-width: 576px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+}
+.slider {
+  overflow: hidden;
+  &-wrapper {
+    height: 438px;
+    display: flex;
+    transition: transform 0.5s;
+    will-change: transform;
+    @media (max-width: 768px) {
+      max-height: 351px;
+      height: 100%;
+    }
+    @media (max-width: 576px) {
+      max-height: 100%;
+    }
+  }
+  &__item {
+    display: none;
+    flex-shrink: 0;
+    width: 100%;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+      gap: 15px;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &--active {
+      display: flex;
+    }
+  }
+  &-info {
+    max-width: 387px;
+    margin-right: 20px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    @media (max-width: 576px) {
+      order: 1;
+      text-align: center;
+    }
+    &__title {
+      margin-top: 26px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      @media (max-width: 768px) {
+        margin: 20px 0;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &__text {
+      margin-bottom: 26px;
+      font-size: 16px;
+      line-height: 20px;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__size {
+      display: block;
+      margin-bottom: 23px;
+      font-size: 16px;
+      line-height: 20px;
+      @media (max-width: 768px) {
+        margin-bottom: 23px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__price {
+      display: block;
+      margin-bottom: 64px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      @media (max-width: 768px) {
+        margin-bottom: 35px;
+        font-size: 20px;
+        line-height: 29px;
+      }
+      @media (max-width: 576px) {
+        margin-bottom: 25px;
+      }
+    }
+    &__button {
+      padding: 29px 108px 29px 104px;
+      font-size: 16px;
+      line-height: 20px;
+      border: 1px solid $red-brown;
+      border-radius: 40px;
+      background-color: $red-brown;
+      color: $white;
+      @media (max-width: 768px) {
+        padding: 22px 70px;
+        font-size: 14px;
+      }
+      @media (max-width: 576px) {
+        padding: 16px 50px;
+      }
+    }
+  }
+  &-image {
+    display: flex;
+    width: 387px;
+    min-height: 438px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 768px) {
+      width: 310px;
+      min-height: auto;
+    }
+    @media (max-width: 576px) {
+      width: 260px;
+    }
+  }
+  &__navigation {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 576px) {
+      margin-top: 25px;
+    }
+  }
+  &__button {
+    width: 51px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    &--prev {
+      background-image: url('../img/popular/arrow-prev.svg');
+      margin-right: 20px;
+      &:hover {
+        @media (min-width: 992px) {
+          opacity: 0.7;
+        }
+      }
+    }
+    &--next {
+      background-image: url('../img/popular/arrow-next.svg');
+      &:hover {
+        @media (min-width: 992px) {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

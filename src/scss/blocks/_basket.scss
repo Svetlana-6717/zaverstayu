@@ -1,0 +1,182 @@
+.basket {
+  padding: 40px 0 60px;
+  @media (max-width: 768px) {
+    margin-top: 95px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 30px 0 40px;
+  }
+  &__order-details {
+    margin-bottom: 40px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__wrapper {
+    &--empty {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      background-color: #fff;
+    }
+  }
+  &__list {
+    padding: 0 20px;
+    background-color: $white;
+    border-radius: 12px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 0 10px;
+    }
+  }
+  &__item {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      column-gap: 10px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $pink-brown;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    &-title {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 14px;
+        letter-spacing: normal;
+      }
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border: 1px solid $pink-brown;
+    border-radius: 50%;
+    &-dec::before, &-inc::before, &-inc::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 13px;
+      height: 2px;
+      background-color: $pink-brown;
+    }
+    &-inc::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    &-delete {
+      background-image: url('../img/waste-basket.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__counter {
+    width: 40px;
+    margin: 0 6px;
+    text-align: center;
+    font-weight: 500;
+    background-color: transparent;
+    color: $pink-brown;
+    border: none;
+    outline: none;
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 25px;
+    }
+  }
+  &__total {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    @media (max-width: 576px) {
+      font-size: 18px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  &__subtotal {
+    width: 100%;
+    height: 48px;
+    padding: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+    text-align: right;
+    background-color: $white;
+    color: $pink-brown;
+    border-radius: 8px;
+    &-amount {
+      margin-left: 10px;
+    }
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  &__input {
+    height: 40px;
+    padding: 0 10px;
+    background-color: $white;
+    border: none;
+    outline: none;
+  }
+  &__label {
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 16px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 14px;
+    }
+    &::after {
+      content: '*';
+      position: absolute;
+      color: $red;
+    }
+  }
+  &__button {
+    margin: 15px 0;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: $red-brown;
+    color: $white;
+    border: 1px solid $red-brown;
+    border-radius: 8px;
+  }
+  &__error {
+    font-size: 12px;
+    color: $red;
+  }
+}

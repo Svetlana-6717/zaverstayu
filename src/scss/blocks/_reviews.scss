@@ -1,0 +1,68 @@
+.reviews {
+  margin-bottom: 80px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-bottom: 40px;
+  }
+  &-wrapper {
+    padding: 39px 43px 62px 43px;
+    border: 1px solid $pink-brown;
+    @media (max-width: 576px) {
+      padding: 30px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 41px;
+    font-family: $playfair;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02px;
+    text-align: center;
+    @media (max-width: 576px) {
+      font-size: 34px;
+      line-height: 40px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-card {
+    max-width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+    text-align: center;
+    &:nth-child(3) {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    &__text {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 20px;
+      @media (max-width: 576px) {
+        font-size: 14px;
+      }
+    }
+    &__author {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

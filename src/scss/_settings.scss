@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 1220px;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: normal;
+  background-color: $white;
+  color: $pink-brown;
+  @media (max-width: 1201px) {
+    min-width: 1030px;
+  }
+  @media (max-width: 992px) {
+    min-width: 830px;
+  }
+  @media (max-width: 768px) {
+    min-width: 610px;
+  }
+  @media (max-width: 576px) {
+    min-width: 525px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    min-width: 330px;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 92%;
+  margin: 0 auto;
+  @media (max-width: 1201px) {
+    max-width: 960px;
+  }
+  @media (max-width: 992px) {
+    max-width: 760px;
+  }
+  @media (max-width: 768px) {
+    max-width: 560px;
+  }
+  @media (max-width: 576px) {
+    width: 87%;
+  }
+}
+.basket-container {
+  max-width: 990px;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+h1, h2, h3, p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.button {
+  &:hover {
+    @media (min-width: 992px) {
+      background-color: $white;
+      color: $red-brown;
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
