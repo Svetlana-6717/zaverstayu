@@ -7,4 +7,4 @@
 - Fetch, LocalStorage
 - Webpack
 ## Ссылка для просмотра
-[Link](https://web-ron.ru/botanika)
+[Link](https://cv-lana.github.io/botanika/dist/)
